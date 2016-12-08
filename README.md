@@ -13,10 +13,12 @@ and being able to influence subsequent retry attempts is valuable.
 
 Note that this is an early release, so the api may change.
 
+![](https://clojars.org/org.jasani/clj-relentless/latest-version.svg)
+
 In leiningen dependencies:
 
 ```clojure
-[org.jasani/clj-relentless "0.1.0"]
+[org.jasani/clj-relentless "x.y.z"]
 ```
 
 In your code:
