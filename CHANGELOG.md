@@ -9,5 +9,5 @@ file. This change log follows the conventions of
 ### Added
 - try-times macro enabling retries
 
-[Unreleased]: https://github.com/your-name/clj-relentless/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/your-name/clj-relentless/compare/v0.1.0...HEAD
 

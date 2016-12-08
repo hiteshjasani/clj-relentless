@@ -23,7 +23,9 @@ In leiningen dependencies:
 
 In your code:
 
+```clojure
 (:require [relentless.core :refer [try-times]])
+```
 
 
 ## Usage
