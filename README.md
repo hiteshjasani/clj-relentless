@@ -70,6 +70,34 @@ Example calling with an exponential backoff strategy.
 ;; ArithmeticException Divide by zero  clojure.lang.Numbers.divide (Numbers.java:158)
 ```
 
+Retry for only Arithmetic exceptions and only after we've encountered
+them at least once.  Our handler is able to change some state so that
+the subsequent retry is successful.  While this example is using
+numbers, one can easily imagine them being replaced with network
+services where the client tries a backup one if the first is not
+responding.
+
+```clojure
+(let [denom (atom 0)]
+  (try-times 3
+             (fn [e n]
+               (if (and (instance? java.lang.ArithmeticException e)
+                        (< n 3))
+                 (do
+                   (println "resetting denom")
+                   (reset! denom 3))
+                 (println (str "received exception: " e))))
+             (println "running")
+             (/ 1 @denom)))
+
+;; running
+;; received exception: java.lang.ArithmeticException: Divide by zero
+;; running
+;; resetting denom
+;; running
+;; 1/3
+```
+
 ## License
 
 Copyright © 2016 Hitesh Jasani
