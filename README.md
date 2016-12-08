@@ -1,7 +1,7 @@
 # clj-relentless
 
-A Clojure library designed to enable easy retrying of code in the face
-of exceptions.
+A Clojure library designed to enable easy and intelligent retrying of
+code in the face of exceptions.
 
 Networking code needs a retry strategy when things don't work the
 first time.  Failures may be recoverable (temporary network glitches,
@@ -11,8 +11,17 @@ and being able to influence subsequent retry attempts is valuable.
 
 ## Installation
 
-tbd
+Note that this is an early release, so the api may change.
 
+In leiningen dependencies:
+
+```clojure
+[org.jasani/clj-relentless "0.1.0"]
+```
+
+In your code:
+
+(:require [relentless.core :refer [try-times]])
 
 
 ## Usage

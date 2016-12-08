@@ -1,5 +1,5 @@
-(defproject clj-relentless "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+(defproject org.jasani/clj-relentless "0.1.0"
+  :description "Enabling intelligent retry logic"
   :url "https://github.com/hiteshjasani/clj-relentless"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
