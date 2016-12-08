@@ -13,7 +13,7 @@ and being able to influence subsequent retry attempts is valuable.
 
 Note that this is an early release, so the api may change.
 
-![](https://clojars.org/org.jasani/clj-relentless/latest-version.svg)
+[![Clojars Project](https://img.shields.io/clojars/v/org.jasani/clj-relentless.svg)](https://clojars.org/org.jasani/clj-relentless)
 
 In leiningen dependencies:
 
