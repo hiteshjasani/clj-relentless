@@ -1,5 +1,9 @@
 # clj-relentless
 
+[![Clojars Project](https://img.shields.io/clojars/v/org.jasani/clj-relentless.svg)](https://clojars.org/org.jasani/clj-relentless)
+
+[![CircleCI](https://circleci.com/gh/hiteshjasani/clj-relentless.svg?style=svg)](https://circleci.com/gh/hiteshjasani/clj-relentless)
+
 A Clojure library designed to enable easy and intelligent retrying of
 code in the face of exceptions.
 
@@ -12,8 +16,6 @@ and being able to influence subsequent retry attempts is valuable.
 ## Installation
 
 Note that this is an early release, so the api may change.
-
-[![Clojars Project](https://img.shields.io/clojars/v/org.jasani/clj-relentless.svg)](https://clojars.org/org.jasani/clj-relentless)
 
 In leiningen dependencies:
 
