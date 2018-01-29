@@ -1,8 +1,6 @@
 # clj-relentless
 
-[![Clojars Project](https://img.shields.io/clojars/v/org.jasani/clj-relentless.svg)](https://clojars.org/org.jasani/clj-relentless)
-
-[![CircleCI](https://circleci.com/gh/hiteshjasani/clj-relentless.svg?style=svg)](https://circleci.com/gh/hiteshjasani/clj-relentless)
+[![Clojars Project](https://img.shields.io/clojars/v/org.jasani/clj-relentless.svg)](https://clojars.org/org.jasani/clj-relentless)  [![CircleCI](https://circleci.com/gh/hiteshjasani/clj-relentless.svg?style=svg)](https://circleci.com/gh/hiteshjasani/clj-relentless)
 
 A Clojure library designed to enable easy and intelligent retrying of
 code in the face of exceptions.
