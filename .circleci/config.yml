@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/clj-relentless
+    docker:
+      - image: circleci/clojure:lein-2.7.1
+        environment:
+          LEIN_ROOT: nbd
+          JVM_OPTS: -Xmx3200m
+        steps:
+          - checkout
+          - restore_cache:
+              key: clj-relentless-{{ checksum "project.clj" }}
+          - run: lein deps
+          - save_cache:
+              paths:
+                - ~/.m2
+                - ~/.lein
+              key: clj-relentless-{{ checksum "project.clj" }}
+          - run: lein do test, uberjar
